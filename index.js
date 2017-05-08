@@ -7,7 +7,14 @@ var elements = require('./data').elements;
 application.use(cors());
 
 application.get('/', function(req, res) {
-  res.json(elements);
+  if (req.query.q) {
+    var result = elements.filter(function(o) {
+      return o.description.text.toLowerCase().includes(req.query.q);
+    });
+    res.json(result);
+  } else {
+    res.json(elements);
+  }
 });
 
 application.get('/posts/:id', function(req, res) {
