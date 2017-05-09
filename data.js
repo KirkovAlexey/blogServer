@@ -3,7 +3,7 @@ module.exports = {
     {
       id: 1,
       image: {
-        src: '/dist/images/default.jpg',
+        src: '/images/default.jpg',
         width: 160,
         height: 120,
         style: {
@@ -23,7 +23,7 @@ module.exports = {
     {
       id: 2,
       image: {
-        src: '/dist/images/default.jpg',
+        src: '/images/default.jpg',
         width: 160,
         height: 120,
         alt: 'Winter'
@@ -39,7 +39,7 @@ module.exports = {
     {
       id: 3,
       image: {
-        src: '/dist/images/default.jpg',
+        src: '/images/default.jpg',
         width: 160,
         height: 120,
         alt: 'Winter',
